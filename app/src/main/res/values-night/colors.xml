@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brighter green reads well on dark surfaces; primary_dark doubles as
+         status-bar tint and as "text on primary_light chip" text color, so we
+         keep it a legible light-green rather than true black-green here. -->
+    <color name="primary">#66BB6A</color>
+    <color name="primary_dark">#A5D6A7</color>
+    <color name="primary_light">#20351F</color>
+    <color name="status_bar">#0D1F0E</color>
+    <color name="accent">#FF8A65</color>
+
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+
+    <color name="text_primary">#ECECEC</color>
+    <color name="text_secondary">#AAAAAA</color>
+
+    <color name="error">#EF5350</color>
+    <color name="completed">#8A8A8A</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="divider">#3A3A3A</color>
+    <color name="pet_chip_bg">#4A2E22</color>
+</resources>

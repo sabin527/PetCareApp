@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="status_bar">#1B5E20</color>
+    <color name="accent">#FF7043</color>
+    <color name="background">#F7F9F7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="error">#D32F2F</color>
+    <color name="completed">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="pet_chip_bg">#FFE0D5</color>
+
+    <!-- Intentionally NOT overridden in values-night: this is the app's solid brand
+         green, used only behind guaranteed-white content (toolbars, FABs, solid
+         buttons). It must stay constant across themes so white text/icons on top
+         always have enough contrast — unlike @color/primary, which lightens in
+         dark mode for its own (different) job of staying legible as text/icon tint
+         against dark surfaces. -->
+    <color name="brand_solid">#2E7D32</color>
+</resources>

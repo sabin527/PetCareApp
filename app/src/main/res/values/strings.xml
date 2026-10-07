@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">PetCare</string>
+    <string name="tagline">Care for your pets, made simple</string>
+
+    <!-- IMPORTANT: replace with your own key from https://console.cloud.google.com -->
+    <string name="google_maps_api_key" translatable="false">AIzaSyCYcaiOBhOscNzC1tHB4T6xWb3uEJ98pBM</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="full_name">Enter Full Name</string>
+    <string name="email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="confirm_password">Enter Confirm Password</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+
+    <!-- Dashboard -->
+    <string name="nav_home">Home</string>
+    <string name="nav_pets">Pets</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_map">Places</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <!-- Pet -->
+    <string name="add_pet">Add Pet</string>
+    <string name="edit_pet">Edit Pet</string>
+    <string name="delete_pet">Delete Pet</string>
+    <string name="pet_name">Enter Pet Name</string>
+    <string name="breed">Enter Breed</string>
+    <string name="age">Enter Age</string>
+    <string name="weight">Enter Weight</string>
+    <string name="dietary_preferences">Enter Dietary Preferences</string>
+    <string name="vaccination_history">Enter Vaccination History</string>
+    <string name="allergies">Enter Allergies</string>
+    <string name="favourite_toys">Enter Favourite Toys</string>
+    <string name="notes">Enter Notes</string>
+    <string name="delete_pet_confirm">Delete this pet? All of its tasks and routines will also be deleted.</string>
+
+    <!-- Task/Routine -->
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="add_routine">Add Routine</string>
+    <string name="edit_routine">Edit Routine</string>
+    <string name="category">Category</string>
+    <string name="schedule">Schedule</string>
+    <string name="required_supplies">Enter Required Supplies</string>
+    <string name="delete_task_confirm">Delete this task?</string>
+    <string name="delete_routine_confirm">Delete this routine? Its generated tasks will also be removed.</string>
+
+    <!-- Delegation -->
+    <string name="delegate_via_sms">Delegate via SMS</string>
+    <string name="pick_contact">Pick Contact</string>
+    <string name="phone_number">Enter Phone Number</string>
+    <string name="message">Enter Message</string>
+    <string name="send_sms">Send SMS</string>
+
+    <!-- Map -->
+    <string name="saved_places">Saved Places</string>
+    <string name="add_place">Add Place</string>
+    <string name="edit_place">Edit Place</string>
+    <string name="place_name">Enter Place Name</string>
+    <string name="place_type">Type</string>
+    <string name="address">Enter Address</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="navigate">Navigate</string>
+    <string name="delete_place_confirm">Delete this saved place?</string>
+
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="update">Update</string>
+</resources>

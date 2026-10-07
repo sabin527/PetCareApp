@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="28dp">
+
+            <FrameLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_circle_white">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_profile"
+                    app:tint="@color/primary_dark" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Jane Doe" />
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="jane@example.com" />
+        </LinearLayout>
+
+        <!-- Account -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:id="@+id/rowEditProfile"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_edit" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Edit profile" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowChangePassword"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_lock" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Change password" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowAccountDetails"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_info" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Account details" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowAddAccount"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_add" android:contentDescription="@null" app:tint="@color/primary" />
+                <TextView style="@style/ProfileRowLabel" android:text="Add new account" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <TextView style="@style/ProfileSectionHeader" android:text="Preferences" />
+
+            <LinearLayout style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_moon" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Dark mode" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@color/primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowNotifications"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_bell" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Notifications" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowUnits"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_ruler" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Weight unit" />
+
+                <TextView
+                    android:id="@+id/tvUnitValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    tools:text="kg" />
+            </LinearLayout>
+
+            <TextView style="@style/ProfileSectionHeader" android:text="Support" />
+
+            <LinearLayout
+                android:id="@+id/rowHelp"
+                style="@style/ProfileRow">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_help" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="Help &amp; support" />
+                <ImageView style="@style/ProfileRowChevron" android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowAbout"
+                style="@style/ProfileRow"
+                android:layout_marginBottom="0dp">
+
+                <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_info" android:contentDescription="@null" />
+                <TextView style="@style/ProfileRowLabel" android:text="About PetCare" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="v1.0"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/error"
+            android:text="@string/logout"
+            android:textColor="@color/error"
+            app:strokeColor="@color/error" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
